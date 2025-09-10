@@ -1,0 +1,3 @@
+Código que exibe através do alert na pagina o texto "Olá Mundo!"
+Foi feito um código em HTML com título e um arquivo externo JavaScript 
+que da a função do código.

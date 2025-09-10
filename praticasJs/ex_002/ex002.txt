@@ -1,0 +1,3 @@
+Código em HTML que exibe um botão através da tag <button>, 
+que chama uma função em JavaScript externo e exibe na tela "Você cliclou no botão", 
+também foi atribuído estilo a página através de um css externo.

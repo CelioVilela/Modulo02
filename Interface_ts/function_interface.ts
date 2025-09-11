@@ -1,0 +1,28 @@
+interface Produto {
+    id: number;
+    nome: string;
+    preco: number;
+    categoria: string;
+}
+
+const produtos: Produto[] = []
+
+ function adicionarProduto(a: Produto){
+        produtos.push(a)
+ }
+
+ adicionarProduto({
+    id: 1,
+    nome: "Teclado",
+    preco: 15.90,
+    categoria: "Informatica"
+ })
+
+  adicionarProduto({
+    id: 1,
+    nome: "Mouse",
+    preco: 32.90,
+    categoria: "Informatica"
+ })
+ 
+  console.log(produtos);

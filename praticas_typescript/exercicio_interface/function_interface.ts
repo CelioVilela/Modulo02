@@ -19,7 +19,7 @@ const produtos: Produto[] = []
  })
 
   adicionarProduto({
-    id: 1,
+    id: 2,
     nome: "Mouse",
     preco: 32.90,
     categoria: "Informatica"

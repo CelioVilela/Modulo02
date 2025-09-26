@@ -23,7 +23,7 @@ class ContaBancariaSimplificada{
     deposita(valor){
         if(valor > 0){
             this.saldo += valor;
-            console.log("Deposito de R$ " + valor);
+            console.log(`Deposito de R$${valor} realizada. \nSaldo atual: R$${this.saldo}`);
         }else{
             console.log("Valor de depósito inválido!");
         }

@@ -1,0 +1,1 @@
+Código que solicita ao usuário o nome do aluno e suas respctivas notas e imprime sua média.

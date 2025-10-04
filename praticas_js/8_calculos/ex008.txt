@@ -1,0 +1,1 @@
+Código que solicita ao usuário um número e calcula diversas operações.

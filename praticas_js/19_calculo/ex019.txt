@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que solicita ao usuário dois números e pede que ele determine que operação realizar.

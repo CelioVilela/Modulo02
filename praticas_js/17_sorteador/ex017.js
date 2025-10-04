@@ -1,18 +1,15 @@
-let resp = window.document.getElementById('saida')
-// Lembre-se que toda variável declarada aqui fora possui escopo global. Veja mais sobre escopo no seu material em PDF, na aula 07.
-
-function acao1() {
-    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
+function gerar() {
+    let min = 1
+    let max = 100
+    let dif = max - min
+    let aleatorio = Math.random() // Essa função gera um valor Real aleatório entre 0 e 1
+    let num = min + Math.trunc(dif * aleatorio)
+    
+    let res = document.querySelector('section#result')
+    res.innerHTML += `<p>Acabei de pensar no número <mark>${num}</mark>!</p>`
 }
 
-function acao2() {
-    resp.innerHTML += '<p>Clicou no segundo botão</p>'
-}
-
-function acao3() {
-    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
-}
-
-function acao4() {
-    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+function limpar() { // Essa é a funcionalidade do outro botão, pra limpar tudo
+    let res = document.querySelector('section#result')
+    res.innerHTML = null // Vai esvaziar a section toda
 }

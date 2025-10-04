@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que solicita ao usuário um número e informa se é par ou ímpar.

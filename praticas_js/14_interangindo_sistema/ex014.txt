@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que informa a data e horário que o botão foi clicado.

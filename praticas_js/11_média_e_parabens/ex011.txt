@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código solicita ao usuário o nome e as notas, calcula a média e imprime uma mensagem.

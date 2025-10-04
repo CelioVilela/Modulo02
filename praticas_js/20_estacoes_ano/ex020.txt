@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que solicita ao usuário o mês do ano e retorna a estação respectivamente.

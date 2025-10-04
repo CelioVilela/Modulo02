@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que solita ao usuário dois números e informa qual o maior valor.

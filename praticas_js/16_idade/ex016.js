@@ -1,18 +1,10 @@
-let resp = window.document.getElementById('saida')
-// Lembre-se que toda variável declarada aqui fora possui escopo global. Veja mais sobre escopo no seu material em PDF, na aula 07.
+function calcidade() {
+    let agora = new Date
+    let ano = agora.getFullYear()
 
-function acao1() {
-    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
-}
+    let nasc = Number(window.prompt('Em que ano você nasceu?'))
+    let idade = ano - nasc
 
-function acao2() {
-    resp.innerHTML += '<p>Clicou no segundo botão</p>'
-}
-
-function acao3() {
-    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
-}
-
-function acao4() {
-    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+    let saida = document.getElementById('saida')
+    saida.innerHTML = `<p>Quem nasceu em ${nasc} vai completar <strong>${idade}</strong> anos em ${ano}.</p>`
 }

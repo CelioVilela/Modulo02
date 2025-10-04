@@ -1,18 +1,12 @@
-let resp = window.document.getElementById('saida')
-// Lembre-se que toda variável declarada aqui fora possui escopo global. Veja mais sobre escopo no seu material em PDF, na aula 07.
+function teste() {
+    let num = Number(window.prompt('Digite um número: '))
+    let tipo
+    if (num % 2 == 0) {
+        tipo = '<strong>PAR</strong>'
+    } else {
+        tipo = '<strong>ÍMPAR</strong>'
+    }
 
-function acao1() {
-    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
-}
-
-function acao2() {
-    resp.innerHTML += '<p>Clicou no segundo botão</p>'
-}
-
-function acao3() {
-    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
-}
-
-function acao4() {
-    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+    let res = document.querySelector('section#result')
+    res.innerHTML = `<p>O número ${num} que foi digitado é ${tipo}!</p>`
 }

@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que gera um número aleátorio entre 1 e 100.

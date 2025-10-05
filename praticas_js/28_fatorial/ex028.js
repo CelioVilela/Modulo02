@@ -1,18 +1,15 @@
-let resp = window.document.getElementById('saida')
-// Lembre-se que toda variável declarada aqui fora possui escopo global. Veja mais sobre escopo no seu material em PDF, na aula 07.
+function fatorial() {
+    let saida = document.getElementById('saida')
+    let n = Number(document.getElementById('fnum').value)
 
-function acao1() {
-    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
-}
-
-function acao2() {
-    resp.innerHTML += '<p>Clicou no segundo botão</p>'
-}
-
-function acao3() {
-    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
-}
-
-function acao4() {
-    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+    saida.innerHTML += `<h2>Calculando ${n}!</h2>`
+    let c = n
+    let fat = 1
+    while (c > 1) {
+        saida.innerHTML += `${c} x `
+        fat *= c // Correspondente ao cálculo fat = fat * c
+        c --
+    }
+    saida.innerHTML += `1 = <strong>${fat.toLocaleString('pt-BR')}</strong>`
+    // Usei o toLocaleString() na linha acima apenas para aparecerem os separadores de milhar/milhões/etc...
 }

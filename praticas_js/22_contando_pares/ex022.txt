@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que conta de 1 até 10 e marca os ímpares.

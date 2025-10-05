@@ -1,18 +1,12 @@
-let resp = window.document.getElementById('saida')
-// Lembre-se que toda variável declarada aqui fora possui escopo global. Veja mais sobre escopo no seu material em PDF, na aula 07.
+function contar() {
+    let saida = document.getElementById('saida')
 
-function acao1() {
-    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
-}
+    saida.innerHTML += `<h2>Contando de 1 até 10</h2>`
 
-function acao2() {
-    resp.innerHTML += '<p>Clicou no segundo botão</p>'
-}
-
-function acao3() {
-    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
-}
-
-function acao4() {
-    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+    let cont = 1
+    while (cont <= 10) {
+        saida.innerHTML += ` ${cont} &#x1F449;`
+        cont ++ // Corresponde a cont = cont + 1
+    }
+    saida.innerHTML += ` &#x1F3C1;`
 }

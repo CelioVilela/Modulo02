@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que conta só os pares de 1 a 10. 

@@ -1,1 +1,1 @@
-Código que demostra o uso de JS externo.
+Código que calcula o fatorial de um número.

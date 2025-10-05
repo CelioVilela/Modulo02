@@ -1,18 +1,25 @@
-let resp = window.document.getElementById('saida')
-// Lembre-se que toda variável declarada aqui fora possui escopo global. Veja mais sobre escopo no seu material em PDF, na aula 07.
+function contagem() {
+    let saida = document.getElementById('saida')
+    let n1 = Number(document.getElementById('fn1').value)
+    let n2 = Number(document.getElementById('fn2').value)
+    let cont
 
-function acao1() {
-    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
-}
-
-function acao2() {
-    resp.innerHTML += '<p>Clicou no segundo botão</p>'
-}
-
-function acao3() {
-    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
-}
-
-function acao4() {
-    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+    saida.innerHTML += `<h2>Contando de ${n1} até ${n2} </h2>`
+    if (n1<n2) {
+        cont = n1
+        while (cont <= n2) {
+            saida.innerHTML += ` ${cont} &#x1F449;`
+            cont ++
+        }
+    } else  if (n2<n1) {
+        cont = n1
+        while (cont >= n2) {
+            saida.innerHTML += ` ${cont} &#x1F449;`
+            cont --
+        }
+    } else {
+        saida.innerHTML += `Não é possível contar, pois os números são iguais`
+    }
+    
+    saida.innerHTML += ` &#x1F3C1;`
 }
